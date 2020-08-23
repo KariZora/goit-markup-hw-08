@@ -1,15 +1,22 @@
-// .logo-link {
-//     margin-right: 85px;
-// }
-
 .logo-link,
 .logo-link-footer {
-    @include font-logo($secondary-font, normal, 700, 24px, 1.16, 0.03em)
+    @include font-logo($secondary-font, normal, 700, 24px, 1.16, 0.03em);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-link, .logo-link-footer {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .logo-link, .logo-link-footer {
-        @include font-logo($secondary-font, normal, 700, 26px, 1.19, 0.03em)
+        @include font-logo($secondary-font, normal, 700, 26px, 1.19, 0.03em);
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
 
