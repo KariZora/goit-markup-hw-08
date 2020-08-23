@@ -1,0 +1,70 @@
+.email-input {
+    margin-top: 20px;
+    display: flex;
+}
+
+.email-input-form {
+    outline: none;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    margin-right: 12px;
+    color: $title-dark-theme-color;
+
+    &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;    
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;    
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+}
+
+.follow-us-button {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+outline: none;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+width: 200px;
+height: 50px;
+color: #FFFFFF;
+background-color: $accent-color;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: 1px solid transparent;
+border-radius: 4px;
+justify-content: center;
+    &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/social-links/telegram.svg)
+    }
+}
+
+.follow-us {
+    margin-top: 72px;
+}
+
+.follow-us-title {
+    margin-right: 10px;
+}

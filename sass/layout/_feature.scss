@@ -1,0 +1,83 @@
+.features-list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-item::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.feature-item-one::before {
+    background-image: url(../images/Osobennosti/osobennosti-img-1.svg);
+}
+.feature-item-two::before {
+    background-image: url(../images/Osobennosti/osobennosti-img-2.svg);
+}
+
+.feature-item-three::before {
+    background-image: url(../images/Osobennosti/osobennosti-img-3.svg);
+}
+
+.feature-item-four::before {
+    background-image: url(../images/Osobennosti/osobennosti-img-4.svg);
+}
+
+.feature-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: $text-light-theme-color;
+}
+
+.feature-description,
+.team-item,
+.team-item-description {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-title,
+.whatwedo-item,
+.join-in {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.feature-title {
+    color: $title-light-theme-color;
+}
+
+.feature-description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

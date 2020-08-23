@@ -1,0 +1,77 @@
+.clients-section .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+.clients-list-item {
+    margin-right: 30px;
+}
+
+.clients-list-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+    }
+}
+
+.clients-list-link-svg-one{
+    width: 45px;
+    height: 50px;
+}
+
+.clients-list-link-svg-two {
+    width: 40px;
+    height: 52px;
+}
+
+.clients-list-link-svg-three {
+    width: 41px;
+    height: 43px;
+}
+
+.clients-list-link-svg-four {
+    width: 80px;
+    height: 43px;
+   
+}
+
+.clients-list-link-svg-five {
+    width: 59px;
+    height: 47px;
+}
+
+.clients-list-link-svg-six {
+    width: 89px;
+    height: 46px;
+}
+
+.clients-list-link-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list-link:hover .clients-list-link-svg,
+.clients-list-link:focus .clients-list-link-svg {
+    fill: $accent-color;
+}

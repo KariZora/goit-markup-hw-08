@@ -1,0 +1,34 @@
+// .logo-link {
+//     margin-right: 85px;
+// }
+
+.logo-link,
+.logo-link-footer {
+    @include font-logo($secondary-font, normal, 700, 24px, 1.16, 0.03em)
+}
+
+@media screen and (min-width: 1200px) {
+    .logo-link, .logo-link-footer {
+        @include font-logo($secondary-font, normal, 700, 26px, 1.19, 0.03em)
+    }
+}
+
+.logo-link {
+    color: $logo-light-theme-color;
+    // display: block;
+    // padding-bottom: 32px;
+    // padding-top: 25px;
+    // animation-name: fadeInLeft;
+    // animation-duration: 1000ms;
+    // animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // animation-iteration-count: 1;
+    // animation-direction: normal;
+}
+
+.logo-link-footer {
+    color: $logo-dark-theme-color;
+}
+
+.web {
+    color: $accent-color;
+}
