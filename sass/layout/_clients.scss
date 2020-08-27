@@ -1,31 +1,32 @@
 .clients-section .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .clients {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .clients-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clients-list-item {
-    margin-right: 30px;
+    padding: 15px;
 }
 
 .clients-list-link {
     display: flex;
-    width: 170px;
-    height: 90px;
+    width: 208px;
+    height: 88px;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
+    
     border-radius: 4px;
     fill: #AFB1B8;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,7 +55,6 @@
 .clients-list-link-svg-four {
     width: 80px;
     height: 43px;
-   
 }
 
 .clients-list-link-svg-five {

@@ -18,8 +18,8 @@
 
 .hero-btn-form {
     box-sizing: border-box;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding-left: 40px;
     padding-top: 40px;
     padding-right: 40px;
@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;    
     position: relative;
-    top: 10%;
+    top: 15%;
 }
 
 .close-form-svg {
@@ -162,20 +162,21 @@
 
 .checkbox-text {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
         &::before {
             content: "";
-            display: inline-block;
-            width: 16px;
-            height: 15px;
+            display: inline-flex;
+
+            width: 12px;
+            height: 11px;
             background-image: url(..//images/icon-check.svg);
-            margin-right: 7px;
-            border: 2px solid #212121;
+            margin-right: 6px;
+            border: 1.8px solid #212121;
             border-radius: 2px;
         }
 }
@@ -190,6 +191,7 @@
 .checkbox-agree-link {
 text-decoration-line: underline;
 color: #2196F3;
+margin-left: 2px;
 }
 
 .checkbox-input-text {

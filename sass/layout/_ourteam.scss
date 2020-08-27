@@ -1,6 +1,6 @@
 .our-team-section .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .our-team-img {
@@ -9,31 +9,24 @@
 
 .our-team {
     margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.our-team-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin-bottom: 30px;
 }
 
 .our-team-list-item {
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 24px;
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-bottom: 30px;
         }
 }
 
 .our-team-social-links {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-
+    padding-left: 122px;
+    padding-right: 122px;
 }
 
 .our-team-section {
@@ -62,7 +55,6 @@
 }
 
 .team-item-description {
-    font-weight: normal;
     color: $text-light-theme-color;
 }
 

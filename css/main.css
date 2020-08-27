@@ -452,7 +452,14 @@ body {
 
 .join-in {
   color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .backdrop.is-hidden {
@@ -475,8 +482,8 @@ body {
 
 .hero-btn-form {
   box-sizing: border-box;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding-left: 40px;
   padding-top: 40px;
   padding-right: 40px;
@@ -487,7 +494,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 
 .close-form-svg {
@@ -622,8 +629,8 @@ body {
 
 .checkbox-text {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -632,12 +639,12 @@ body {
 
 .checkbox-text::before {
   content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
+  display: inline-flex;
+  width: 12px;
+  height: 11px;
   background-image: url(..//images/icon-check.svg);
-  margin-right: 7px;
-  border: 2px solid #212121;
+  margin-right: 6px;
+  border: 1.8px solid #212121;
   border-radius: 2px;
 }
 
@@ -651,6 +658,7 @@ body {
 .checkbox-agree-link {
   text-decoration-line: underline;
   color: #2196F3;
+  margin-left: 2px;
 }
 
 .checkbox-input-text {
@@ -725,8 +733,8 @@ body {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -941,24 +949,54 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Hero-img.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-mobile.png);
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-tablet.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-desktop.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-section/Header-desktop@2x.png);
+  }
+}
+
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.hero-title {
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -991,27 +1029,26 @@ body {
   outline: none;
 }
 
-.features-list {
-  display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+.feature .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .feature-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .feature-item::before {
   content: "";
   display: block;
+  padding: auto;
   width: 70px;
   height: 70px;
   margin-bottom: 30px;
   padding-top: 25px;
-  padding-right: 100px;
+  padding-right: 190px;
   padding-bottom: 25px;
-  padding-left: 100px;
+  padding-left: 190px;
   background-color: #F5F4FA;
   border-radius: 4px;
   background-repeat: no-repeat;
@@ -1050,19 +1087,13 @@ body {
   margin-bottom: 0;
 }
 
-.feature .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.feature-title,
-.whatwedo-item,
-.join-in {
+.feature-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feature-title {
@@ -1122,8 +1153,8 @@ body {
 }
 
 .our-team-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .our-team-img {
@@ -1132,31 +1163,24 @@ body {
 
 .our-team {
   margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.our-team-list {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .our-team-list-item {
   background-color: #FFFFFF;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
 }
 
 .our-team-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .our-team-social-links {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 122px;
+  padding-right: 122px;
 }
 
 .our-team-section {
@@ -1185,7 +1209,6 @@ body {
 }
 
 .team-item-description {
-  font-weight: normal;
   color: #757575;
 }
 
@@ -1212,30 +1235,30 @@ body {
 }
 
 .clients-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .clients {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .clients-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients-list-item {
-  margin-right: 30px;
+  padding: 15px;
 }
 
 .clients-list-link {
   display: flex;
-  width: 170px;
-  height: 90px;
+  width: 208px;
+  height: 88px;
   justify-content: center;
   align-items: center;
   border: 1px solid #AFB1B8;
@@ -1292,23 +1315,26 @@ footer {
 }
 
 .address-section {
-  padding-top: 60px;
-  margin-right: 69px;
+  margin-bottom: 60px;
 }
 
-.address-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.logo-link-footer {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
 }
 
 .footer-container {
-  display: flex;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.address-list-item {
+  text-align: center;
+}
+
 .address-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adress-item {
@@ -1357,36 +1383,31 @@ footer {
 }
 
 .join-in-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
+  justify-content: center;
 }
 
 .join-in-section {
-  margin-right: 94px;
-  padding-top: 72px;
+  margin-bottom: 60px;
 }
 
 .email-input {
+  margin: 0 auto;
   margin-top: 20px;
-  display: flex;
 }
 
 .email-input-form {
   outline: none;
-  width: 358px;
+  width: 100%;
   height: 50px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 16px;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  margin-right: 12px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -1410,6 +1431,7 @@ footer {
   line-height: 1.87;
   outline: none;
   display: flex;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1429,10 +1451,6 @@ footer {
   width: 24px;
   height: 24px;
   background-image: url(../images/social-links/telegram.svg);
-}
-
-.follow-us {
-  margin-top: 72px;
 }
 
 .follow-us-title {

@@ -3,27 +3,26 @@ footer {
 }
 
 .address-section {
-    padding-top: 60px;
-    margin-right: 69px;
+    margin-bottom: 60px;
 }
 
-.address-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+.logo-link-footer {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
 }
-
-// .logo-link-footer {
-//     margin-bottom: 20px;
-// }
 
 .footer-container {
-    display: flex;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.address-list-item {
+    text-align: center;
+}
+
 .address-list-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .adress-item {
