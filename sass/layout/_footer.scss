@@ -4,21 +4,17 @@ footer {
 
 .address-section {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .logo-link-footer {
     margin-bottom: 20px;
-    text-align: center;
     padding: 0;
 }
 
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.address-list-item {
-    text-align: center;
 }
 
 .address-list-item:not(:last-child) {
@@ -35,3 +31,27 @@ footer {
     @extend %font-for-footer-contacts;
     color: $text-dark-theme-color;
 }
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+    .address-section {
+        margin-right: 165px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        flex-wrap: nowrap;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .address-section {
+        margin-right: 70px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+} 

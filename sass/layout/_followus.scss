@@ -62,3 +62,45 @@ justify-content: center;
 .follow-us-title {
     margin-right: 10px;
 }
+.follow-us {
+    text-align: center;  
+}
+
+@media screen and (min-width: 768px) {
+    .follow-us {
+        padding-top: 60px;
+        margin: auto;
+        text-align: center;
+    }
+    .email-input-form {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .follow-us {
+        margin: 0;
+        text-align: left;
+        padding-top: 0;
+        margin-top: 12px;
+    }
+    .email-input-form {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+    .email-input {
+        display: flex;
+    }
+    // .follow-us-button {
+    //     display: inline-block;
+    //     align-items: center;
+    //     padding-top: 10px;
+    //     padding-right: 0;
+    //     padding-bottom: 10px;
+    //     padding-left: 28px;
+    //     &::after {
+    //         display: inline-block;
+    //     }
+    // }
+
+}

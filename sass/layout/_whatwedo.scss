@@ -1,4 +1,6 @@
-
+.what-we-do {
+    display: none;
+}
 
 .whatwedo {
     margin-top: 0;
@@ -36,9 +38,15 @@
     bottom: 0;
     transform: translateX(-50%);
     width: 100%;
+    text-transform: uppercase;
     }
 
 .whatwedo-list-item-img {
     display: block;
     max-width: 100%;
+}
+@media screen and (min-width: 1200px) {
+    .what-we-do {
+        display: block;
+    }
 }

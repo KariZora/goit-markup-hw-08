@@ -171,7 +171,6 @@
         &::before {
             content: "";
             display: inline-flex;
-
             width: 12px;
             height: 11px;
             background-image: url(..//images/icon-check.svg);
@@ -237,4 +236,20 @@ letter-spacing: 0.03em;
 color: #212121;
 margin: 0;
 margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .hero-btn-form {
+        top: 32%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero-btn-form {
+        top: 31%;
+        width: 528px;
+        height: 581px;
+    }
+    .checkbox-text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }

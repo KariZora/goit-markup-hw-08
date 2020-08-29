@@ -16,7 +16,7 @@
 }
 
 .clients-list-item {
-    padding: 15px;
+    margin: 15px;
 }
 
 .clients-list-link {
@@ -74,4 +74,35 @@
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
     fill: $accent-color;
+}
+@media screen and (min-width: 768px) {
+    .clients-list-link {
+    width: 224px;
+    height: 88px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .clients {
+        font-size: 36px;
+        line-height: 1.16;
+    }
+    .clients-list {
+        flex-wrap: nowrap;
+    }
+    .clients-list-link {
+        width: 168px;
+    }
+    .clients-list-item {
+        margin: 0;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    .clients-section .container {
+        padding-top: 94px;
+        padding-right: 15px;
+        padding-bottom: 94px;;
+        padding-left: 15px;
+    }
+
 }

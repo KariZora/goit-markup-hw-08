@@ -40,11 +40,6 @@
     background-image: url(../images/Osobennosti/osobennosti-img-4.svg);
 }
 
-.feature-title {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
 .feature-description {
     color: $text-light-theme-color;
 }
@@ -55,8 +50,7 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-// .whatwedo-item,
-// .join-in
+
 .feature-title {
 font-weight: 700;
 font-size: 14px;
@@ -64,10 +58,9 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: center;
-}
-
-.feature-title {
-    color: $title-light-theme-color;
+margin-top: 0;
+margin-bottom: 10px;
+color: $title-light-theme-color;
 }
 
 .feature-description {
@@ -75,4 +68,58 @@ text-align: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feature .container {
+        padding: 45px 0;
+    }
+    .feature-item:not(:last-child) {
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    .feature-item {
+        // margin: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        width: 354px;
+        height: 251px;
+    }
+    .feature-item::before {
+        padding-left: 142px;
+        padding-right: 142px;
+    }
+    .feature-title {
+        text-align: initial;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .features-list {
+        flex-wrap: initial;
+    }
+    .feature-item:not(:last-child) {
+        margin-right: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .feature-item {
+        margin: 0;
+        width: 270px;
+    }
+    .feature .container {
+        padding: 94px 15px;
+    }
+    .feature-item::before {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
