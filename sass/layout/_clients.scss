@@ -75,6 +75,27 @@
 .clients-list-link:focus .clients-list-link-svg {
     fill: $accent-color;
 }
+@media screen and (max-width: 479px) {
+    .clients-list {
+        display: block;
+        text-align: center;
+    }
+    .clients-list-link {
+        margin: 0;
+        width: 224px;
+        justify-content: center;        
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+    .clients-list-item {
+        width: 224px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
     .clients-list-link {
     width: 224px;

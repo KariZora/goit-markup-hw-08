@@ -822,6 +822,15 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 479px) {
+  .projects-img {
+    width: 100%;
+  }
+  .projects-list-item {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects-list-item {
     width: 352px;

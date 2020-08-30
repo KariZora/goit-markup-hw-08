@@ -70,6 +70,22 @@ color: $title-light-theme-color;
     letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 479px) {
+    .feature-item::before {
+        padding: 15px 0;
+        width: 100%;
+    }
+    .feature-item {
+        width: 100%;
+    }
+    .feature .container {
+        width: 100%;
+    }
+    .feature-description {
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .features-list {
         display: flex;
