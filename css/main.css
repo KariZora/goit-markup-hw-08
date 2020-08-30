@@ -637,6 +637,10 @@ body {
   border-radius: 2px;
 }
 
+.checkbox-input-text {
+  display: none;
+}
+
 .checkbox-input-text:checked + .checkbox-text::before {
   background-color: #2196F3;
   border-color: #2196F3;

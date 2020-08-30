@@ -178,7 +178,11 @@
             margin-right: 6px;
             border: 1.8px solid #212121;
             border-radius: 2px;
+
         }
+}
+.checkbox-input-text {
+    display: none;
 }
 
 .checkbox-input-text:checked + .checkbox-text::before {
